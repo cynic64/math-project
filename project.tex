@@ -6,6 +6,7 @@
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{color}
+\usepackage{microtype}
 
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 
@@ -29,12 +30,12 @@
 
 \href{https://www.bbc.com/news/science-environment-49893849}{https://www.bbc.com/news/science-environment-49893849}
 
-\begin{figure}[H]
+\vbox {
   \textbf{1.} Add this image to geogebra or desmos and adjust the scale appropriately. Have the horizontal axis of symmetry lie along the x-axis.
 
   \includegraphics[scale=0.4]{desmos-whale.png}
   The \textbf{girth} of the whale at a given point is the circumference of the circular cross-section at this point.
-\end{figure}
+}
 
 \textbf{2.} From your diagram work out an estimate for the maximum girth of the whale.
 \begin{equation*}
@@ -49,13 +50,11 @@
 \begin{equation*}
   C \approx 9.11\unit{m}
 \end{equation*}
-\smallskip
 
 A formula that can approximate the weight (\textit{M}) of a whale from its size is:
 \begin{equation*}
   M = 6,144.79 - 1,788B - 914C_{40\%}+500BC_{40\%}
 \end{equation*}
-\smallskip
 
 \textbf{3.} Use the formula to estimate the weight of the whale.
 \begin{equation*}
@@ -73,24 +72,39 @@ A formula that can approximate the weight (\textit{M}) of a whale from its size 
 \begin{equation*}
   M \approx 36.556
 \end{equation*}
-\smallskip
 
 \vbox{
   In order to find the average density of a whale an estimate for the volume needs to be calculated.
 
   \textbf{4.}	Find an equation (or equations) that models the upper half of the body of the whale.
 
-  %\begin{equation*}
-  %  r = 
-  %\end{equation*}
+  I manually placed points every 0.5m along the the upper half of the whale in desmos, then used an online tool to find a polynomial regression. I decided to use 2 equations, one for all points up to 3.5m along the whale, and one for all points after that. Had I only used one equation, I would need a polynomial with a very high degree for an accurate fit because of the bump 3.5m along the whale. I still needed polynomials of degrees 3 and 6, but to model the whale in a single polynomial would have required one of at least degree 13. {\color{red}{Appendix with explanation}}
 
-  \[ \begin{cases} 
-    0 & x\leq 0 \\
-    \frac{100-x}{100} & 0\leq x\leq 100 \\
-    0 & 100\leq x 
+  Here is the equation for $0 \leq x \leq 3.5$:
+  \begin{equation*}
+    0.123x^3 - 0.768x^2 + 1.57x + 0.0029
+  \end{equation*}
+
+  And here is the equation for $3.5 \leq x \leq 14$:
+  \begin{equation*}
+    -0.000044809^6 + 0.0022276x^5 - 0.0434818x^4 + 0.423465x^3 - 2.17075x^2 + 5.515x - 4
+  \end{equation*}
+  The high number of decimal places in the second equation ($3.5 \leq x \leq 14$) is necessary because of the high exponents involved. With fewer decimal places, the equation strays from the points it should match.
+
+  Here is a piecewise function combining both equations:
+  \[
+  \mbox{\large\(
+  \begin{cases}
+    0.123x^3 - 0.768x^2 + 1.57x + 0.0029, & \qquad \text{for} \  0 \leq x \leq 3.5 \\
+    -0.000044809^6 + 0.0022276x^5 - 0.0434818x^4 + 0.423465x^3 - 2.17075x^2 + 5.515x - 4 & \qquad \text{for} \  3.5 \leq x \leq 14
   \end{cases}
+  \)}
   \]
-  %\end{samepage}
+
+  And here is an image showing how close the fit is to the original set of 28 points:
+
+  \vspace{-12pt}
+  \includegraphics[scale=0.4]{desmos-with-piecewise.png}
 }
 
 \textbf{5.}	Use a spreadsheet and your model to estimate the distance from the line of symmetry of the whale to the upper edge at intervals of 25 cm.
