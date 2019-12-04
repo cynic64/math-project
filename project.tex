@@ -5,6 +5,7 @@
 \usepackage[margin=1.0in]{geometry}
 \usepackage{float}
 \usepackage{amsmath}
+\usepackage{color}
 
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 
@@ -12,6 +13,7 @@
 \author{Nicholas Schweitzer}
 \date{}
 \setlength\parindent{0pt}
+\setlength\parskip{12pt}
 \setlength{\mathindent}{24pt}
 
 \begin{document}
@@ -26,7 +28,6 @@
 \end{figure}
 
 \href{https://www.bbc.com/news/science-environment-49893849}{https://www.bbc.com/news/science-environment-49893849}
-\\\\
 
 \begin{figure}[H]
   \textbf{1.} Add this image to geogebra or desmos and adjust the scale appropriately. Have the horizontal axis of symmetry lie along the x-axis.
@@ -74,13 +75,28 @@ A formula that can approximate the weight (\textit{M}) of a whale from its size 
 \end{equation*}
 \smallskip
 
-In order to find the average density of a whale an estimate for the volume needs to be calculated.
+\vbox{
+  In order to find the average density of a whale an estimate for the volume needs to be calculated.
 
-\textbf{4.}	Find an equation (or equations) that models the upper half of the body of the whale.
+  \textbf{4.}	Find an equation (or equations) that models the upper half of the body of the whale.
+
+  %\begin{equation*}
+  %  r = 
+  %\end{equation*}
+
+  \[ \begin{cases} 
+    0 & x\leq 0 \\
+    \frac{100-x}{100} & 0\leq x\leq 100 \\
+    0 & 100\leq x 
+  \end{cases}
+  \]
+  %\end{samepage}
+}
 
 \textbf{5.}	Use a spreadsheet and your model to estimate the distance from the line of symmetry of the whale to the upper edge at intervals of 25 cm.
 
-\textbf{6.}	Find an estimate for the volume of the whale and hence its density.  
+\textbf{6.}	Find an estimate for the volume of the whale and hence its density.
+{\color{red}{Must include a justification for the precision of the answer}}
 
 For question 6 you should assume the cross-section of the whale is circular (up to the start of the tail).
 
