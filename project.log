@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.2)  7 DEC 2019 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.2)  7 DEC 2019 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -409,55 +409,56 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 <desmos-whale.png, id=12, 1203.49625pt x 683.55376pt>
 File: desmos-whale.png Graphic file (type png)
 <use desmos-whale.png>
-Package pdftex.def Info: desmos-whale.png  used on input line 31.
+Package pdftex.def Info: desmos-whale.png  used on input line 32.
 (pdftex.def)             Requested size: 421.23pt x 239.24739pt.
 
 [1
 
 {/usr/local/texlive/2019basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./
 desmos-whale.png>]
-<desmos-with-piecewise.png, id=25, 1378.14874pt x 551.05875pt>
+<desmos-with-piecewise.png, id=27, 1378.14874pt x 551.05875pt>
 File: desmos-with-piecewise.png Graphic file (type png)
 <use desmos-with-piecewise.png>
-Package pdftex.def Info: desmos-with-piecewise.png  used on input line 91.
+Package pdftex.def Info: desmos-with-piecewise.png  used on input line 92.
 (pdftex.def)             Requested size: 413.44781pt x 165.3189pt.
  [2]
-<spreadsheet_no_cross.png, id=36, 548.0475pt x 266.9975pt>
+<spreadsheet_no_cross.png, id=40, 548.0475pt x 266.9975pt>
 File: spreadsheet_no_cross.png Graphic file (type png)
 <use spreadsheet_no_cross.png>
-Package pdftex.def Info: spreadsheet_no_cross.png  used on input line 99.
+Package pdftex.def Info: spreadsheet_no_cross.png  used on input line 100.
 (pdftex.def)             Requested size: 219.2151pt x 106.79709pt.
-<spreadsheet_with_cross.png, id=37, 743.77875pt x 266.9975pt>
+<spreadsheet_with_cross.png, id=41, 743.77875pt x 266.9975pt>
 File: spreadsheet_with_cross.png Graphic file (type png)
 <use spreadsheet_with_cross.png>
-Package pdftex.def Info: spreadsheet_with_cross.png  used on input line 108.
+Package pdftex.def Info: spreadsheet_with_cross.png  used on input line 109.
 (pdftex.def)             Requested size: 297.50623pt x 106.79709pt.
  [3 <./desmos-with-piecewise.png> <./spreadsheet_no_cross.png> <./spreadsheet_w
-ith_cross.png>] [4]
-<chrysaora-fuscescens.jpg, id=55, 283.81032pt x 482.55281pt>
+ith_cross.png>]
+<chrysaora-fuscescens.jpg, id=54, 283.81032pt x 482.55281pt>
 File: chrysaora-fuscescens.jpg Graphic file (type jpg)
 <use chrysaora-fuscescens.jpg>
-Package pdftex.def Info: chrysaora-fuscescens.jpg  used on input line 148.
+Package pdftex.def Info: chrysaora-fuscescens.jpg  used on input line 150.
 (pdftex.def)             Requested size: 283.80962pt x 482.55162pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+ [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
  [5 <./chrysaora-fuscescens.jpg>]
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
- (./project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+
+(./project.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `project.out' has not changed.
 (rerunfilecheck)             Checksum: F4764AC55539415735BF921DE1E291E3;186.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 8256 strings out of 493610
- 124171 string characters out of 6159293
+ 8267 strings out of 493610
+ 124251 string characters out of 6159293
  264650 words of memory out of 5000000
  12272 multiletter control sequences out of 15000+600000
- 12858 words of font info for 67 fonts, out of 8000000 for 9000
+ 12960 words of font info for 69 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 33i,11n,42p,692b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,11n,42p,694b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2019basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2019basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -475,10 +476,10 @@ dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019basic/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019basic/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019ba
 sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on project.pdf (6 pages, 1824292 bytes).
+Output written on project.pdf (5 pages, 1822583 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  16938 words of extra memory for PDF output out of 17280 (max. 10000000)
 
