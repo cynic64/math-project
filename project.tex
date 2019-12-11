@@ -12,6 +12,7 @@
 \newcommand\todo[1]{\textcolor{red}{#1}}
 \newcommand\ask[1]{\textcolor{cyan}{#1}}
 \newcommand\chry{\textit{Chrysaora fuscescens}}
+\newcommand\chrys{\textit{Chrysaora fuscescens\ }}
 
 \title{\Huge Weighing a Whale}
 \author{Nicholas Schweitzer}
@@ -145,19 +146,50 @@
 
 Use mathematics to find an estimate for the surface area of a whale or a sea creature of your choosing. Your process should include an initial answer and then an identification of an improvement that could be made, which is then carried out. Clearly explain all your steps and discuss, as precisely as you can, any limitations of the process.
 
-I chose to estimate the surface area of \chry. I will only be calculating the area of the dome, not the tentacles, as they have so many subtleties and it is difficult to even define their area.
+I chose to estimate the surface area of \chry. I will only be calculating the area of the bell, not the tentacles, as they have so many subtleties and it is difficult to even define their area.
 
 \includegraphics{chrysaora-fuscescens.jpg}
 
-The jellyfish can be modeled as an oblate spheroid, a shape formed by rotating an ellipse around its minor axis. The formula for the surface area of an oblate sphereoid is
-\begin{equation*}
-  A = 2\pi\left(a^2+\frac{b^2}{\sin(\alpha)}\times\ln\left(\frac{1+\sin(\alpha)}{\cos(\alpha)}\right)\right)
-\end{equation*}
-where
-\begin{equation*}
-  \alpha=\arccos\left(\frac{a}{b}\right)
-\end{equation*}
-$a$ and $b$ are the major and minor axes of the ellipse that forms the spheroid.
+The jellyfish's bell can be modeled as half of an oblate spheroid. An oblate spheroid is a shape formed by rotating an ellipse around its minor axis. The formula for the surface area of an oblate sphereoid is
+\begin{gather}
+  A = 2\pi\left(a^2+\frac{b^2}{\sin(\alpha)}\times\ln\left(\frac{1+\sin(\alpha)}{\cos(\alpha)}\right)\right) \\
+  \text{where} \nonumber \\
+  \alpha=\arccos\left(\frac{a}{b}\right) \nonumber
+\end{gather}
+and $a$ and $b$ are the major and minor axes of the ellipse that forms the spheroid. 
 
 \ask{more correct to use square brackets for outer brackets?}
+
+\includegraphics{chrysaora-fuscescens-cropped.png} \\
+\textit{\small The bell of \chrys with an overlay showing the length of the major and minor axes of the ellipse that will be used to model it, in pixels.}
+
+The diameter of the bell of an adult \chrys is approximately 17.7 inches in diameter, or 0.450m. This is the major axis of the ellipse, $a$. Since we have measurements for the major and minor axes in pixels, we can calculate the length of $b$, the minor axis.
+\begin{gather*}
+  \frac{290}{192} = \frac{0.450}{b} \\
+  b \times \frac{290}{192} = 0.450 \\
+  b = \frac{192 \times 0.450}{290} \\
+  b \approx 0.298\unit{m}
+\end{gather*}
+
+Now that we have $a$ and $b$, we can use equation 3 to calculate the area of an oblate spheroid with the same proportions as the bell of \chry. First we calculate $\alpha$, the angular eccentricity of the bell:
+\begin{gather*}
+  a = 0.450\unit{m} \\
+  b = 0.298\unit{m} \\
+  \alpha=\arccos\left(\frac{a}{b}\right) \\
+  \alpha=\arccos\left(\frac{0.450}{0.298}\right) \\
+  \text{\todo{this is wrong! a and b should be switched but idk why}} \\
+  \alpha \approx 0.847 \ \text{\todo{radians symbol}}
+\end{gather*}
+
+And then the overall area:
+\begin{gather*}
+  a = 0.298\unit{m} \\
+  b = 0.450\unit{m} \\
+  \alpha = 0.847\unit{c} \\
+  A = 2\pi\left(a^2+\frac{b^2}{\sin(\alpha)}\times\ln\left(\frac{1+\sin(\alpha)}{\cos(\alpha)}\right)\right) \\
+  A = 2\pi\left(0.298^2+\frac{0.450^2}{\sin(0.847)}\times\ln\left(\frac{1+\sin(0.847)}{\cos(0.847)}\right)\right) \\
+  A \approx 1.83\unit{m^2}
+\end{gather*}
+
+\href{https://www.montereybayaquarium.org/animals-and-exhibits/animal-guide/invertebrates/sea-nettle}{https://www.montereybayaquarium.org/animals-and-exhibits/animal-guide/invertebrates/sea-nettle}
 \end{document}
